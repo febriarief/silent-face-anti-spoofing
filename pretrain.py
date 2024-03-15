@@ -14,7 +14,7 @@ def scale_and_crop(bbox, original_image_size):
         new_width = width
         new_height = width / target_ratio
     
-    scale_factor = 2.7
+    scale_factor = 1
     
     new_width *= scale_factor
     new_height *= scale_factor
@@ -48,8 +48,8 @@ def resize_image(array_image, target_width = 80, target_height = 80):
 model_test = AntiSpoofPredict(0)
 
 # SAMPLE_PATH = os.path.join(os.path.dirname(__file__), 'images', 'sample', 'fake')
-SAMPLE_PATH = os.path.join(os.path.dirname(__file__), 'images', 'sample', 'real')
-OUTPUT_PATH = os.path.join(os.path.dirname(__file__), 'images', 'output_pretrain')
+SAMPLE_PATH = os.path.join(os.path.dirname(__file__), 'images', 'sample-training')
+OUTPUT_PATH = os.path.join(os.path.dirname(__file__), 'images', 'output-pretrain')
 
 files = os.listdir(SAMPLE_PATH)
 counter = 1

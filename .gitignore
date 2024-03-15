@@ -5,6 +5,8 @@ datasets/rgb_image/*
 images/output_pretrain/*
 images/sample/*
 
+resources/custom_models
+
 saved_logs/jobs/*
 saved_logs/snapshot/*
 
